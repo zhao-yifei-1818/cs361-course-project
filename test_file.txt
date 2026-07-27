@@ -1,1 +1,2 @@
 Test commit #2
+Current stage: step 2 
