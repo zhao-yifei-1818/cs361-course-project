@@ -1,9 +1,45 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create or Update Event</title><link rel="stylesheet" href="style.css"></head>
-<body data-page="event-form"><header><h1>Create or Update Event</h1><nav><a href="index.html">Dashboard</a><a href="events.html">Events</a><a href="alarms.html">Alarms</a></nav></header>
-<main><div id="message" aria-live="polite"></div><form id="event-form"><input type="hidden" id="event-id"><div class="form-columns">
-<section class="card stack"><h2>Event Details</h2><label>Quick template <select id="template"><option value="">Start from blank</option><option value="passport">Passport Renewal</option><option value="taxes">File Taxes</option></select></label>
-<label>Event title <input id="title" required maxlength="80"></label><label>Event type <select id="type" required><option value="">Choose a type</option><option>Appointment</option><option>Government</option><option>Personal</option><option>Finance</option></select></label>
-<label>Date <input id="date" type="date" required></label><label>Details <textarea id="details" required maxlength="300"></textarea></label></section>
-<aside class="card stack"><h2>Alarm</h2><p id="alarm-summary">No alarm is set for this event.</p><label>Set an alarm? <select id="set-alarm"><option value="no">No</option><option value="yes">Yes</option></select></label><p class="muted">Alarm Settings opens after the event is saved.</p><button type="submit">Save &amp; Continue</button><a id="alarm-settings" class="button" href="alarm-form.html" hidden>Alarm Settings</a></aside></div>
-<div class="actions"><button type="submit">Save Event</button><a class="button secondary" href="events.html">Cancel</a><button id="delete-event" class="danger" type="button" hidden>Delete</button></div></form></main><script src="app.js"></script></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create or Update Event</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="event-form">
+    <header>
+      <h1>Create or Update Event</h1>
+      <nav><a href="index.html">Dashboard</a><a href="events.html">Events</a><a href="alarms.html">Alarms</a></nav>
+    </header>
+    <main>
+      <div id="message" aria-live="polite"></div>
+      <form id="event-form"><input type="hidden" id="event-id">
+        <div class="form-columns">
+          <section class="card stack">
+            <h2>Event Details</h2><label>Quick template <select id="template">
+                <option value="">Start from blank</option>
+                <option value="passport">Passport Renewal</option>
+                <option value="taxes">File Taxes</option>
+              </select></label><label>Event title <input id="title" required maxlength="80"></label><label>Event type <select id="type" required>
+                <option value="">Choose a type</option>
+                <option>Appointment</option>
+                <option>Government</option>
+                <option>Personal</option>
+                <option>Finance</option>
+              </select></label><label>Date <input id="date" type="date" required></label><label>Details <textarea id="details" required maxlength="300"></textarea></label>
+          </section>
+          <aside class="card stack">
+            <h2>Alarm</h2>
+            <p id="alarm-summary">No alarm is set for this event.</p><label>Set an alarm? <select id="set-alarm">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+              </select></label>
+            <p class="muted">Alarm Settings opens after the event is saved.</p><button type="submit">Save &amp; Continue</button><a id="alarm-settings" class="button" href="alarm-form.html" hidden>Alarm Settings</a>
+          </aside>
+        </div>
+        <div class="actions"><button type="submit">Save Event</button><a class="button secondary" href="events.html">Cancel</a><button id="delete-event" class="danger" type="button" hidden>Delete</button></div>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
