@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Alarm Settings</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="alarm-form"><header><h1>Alarm Settings</h1><nav><a href="index.html">Dashboard</a><a href="events.html">Events</a><a href="alarms.html">Alarms</a></nav></header>
+<main><div id="message" aria-live="polite"></div><form id="alarm-form" class="card stack"><input id="alarm-id" type="hidden"><h2 id="alarm-event-title">Event Reminder</h2>
+<label>Alarm date <input id="alarm-date" type="date" required></label><label>Delivery method <select id="delivery"><option>Email</option><option>SMS</option></select></label><p class="muted">Delivery is simulated for this prototype.</p>
+<div class="actions"><button type="submit">Save Alarm</button><a id="cancel-alarm" class="button secondary" href="events.html">Cancel</a><button id="delete-alarm" class="danger" type="button" hidden>Delete</button></div></form></main><script src="app.js"></script></body></html>
